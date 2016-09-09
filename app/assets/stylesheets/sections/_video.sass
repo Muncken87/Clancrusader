@@ -1,0 +1,23 @@
+@import mixins/colors
+
+.video-player
+  width: 100%
+  position: relative
+  height: 100vh
+
+  .video-buttons
+    position: absolute
+    top: 70%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    button
+      background-color: $orange
+      box-shadow: none
+      border: none
+      font-weight: bold
+      padding: 0 30px
+      line-height: 48px
+
+      &:hover
+        background-color: darken($orange, 10%)
