@@ -1,22 +1,24 @@
 .navbar
-  background-color: black !important
-  border-radius: none
+  background-color: white !important
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 1
 
   .logo
     font-weight: bold
     font-size: 2.2rem
     line-height: 90px
     margin-right: 50px
-    border: none !important
-    border-top-left-radius: 0px !important
-    border-bottom-left-radius: 0px !important
     text-shadow: none
-    color: white
+    color: black
     height: 90px
+    font-family: 'Fredoka One', cursive
 
     &:hover
-      color: black
-      background: white
+      color: white
+      background: black
 
   ul
 
@@ -26,7 +28,7 @@
       display: inline-block
 
       a
-        color: white
+        color: black
         text-decoration: none
         line-height: 50px
         font-weight: bold
@@ -34,3 +36,7 @@
         height: 90px
         line-height: 90px
         font-size: 1.2rem
+
+        &:hover
+          background-color: black
+          color: white

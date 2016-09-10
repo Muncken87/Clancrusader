@@ -1,15 +1,13 @@
 @import mixins/colors
 
 .video-player
-  width: 100%
-  position: relative
-  height: 100vh
 
   .video-buttons
     position: absolute
-    top: 70%
+    top: 60%
     left: 50%
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -60%)
+    text-align: center
 
     button
       background-color: $orange
@@ -21,3 +19,9 @@
 
       &:hover
         background-color: darken($orange, 10%)
+
+    h1
+      font-family: 'Fredoka One', cursive
+      color: black
+      font-size: 4rem
+      margin-bottom: 5rem
