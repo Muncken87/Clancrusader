@@ -1,3 +1,4 @@
+@import "mixins/colors"
 .factions
   background-image: url(image_path('grandpa.jpg'))
   height: 100%
@@ -26,6 +27,15 @@
     position: relative
     overflow: hidden
     margin-bottom: 3rem !important
+
+
+  .faction-text
+
+    .uk-button-primary
+      background-color: $button-color
+
+      &:hover
+        background-color: lighten($button-color,10)
 
     // .separator
     //   background-color: white
