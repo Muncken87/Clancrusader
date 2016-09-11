@@ -1,14 +1,21 @@
 @import "mixins/colors"
 .game-overview
   padding: 10rem 0rem
-  position: relative
+
+  .uk-container
+    position: relative
 
   .slide-left
     position: absolute
-    top: 12%
-    left: 10%
+    top: 25%
+    left: -40%
     z-index: 5
     transition: all 0.2s
+    transform: translate(25%, -40%)
+
+    @media (max-width: 1220px)
+      display: none
+
 
   h2
     font-size: 3rem
@@ -28,6 +35,6 @@
     padding: 0
     margin: 0
     li
-      list-style-type: disc
-      list-style-position: inside
+      list-style-type: square
+      list-style-position: outside
       margin-left: 2rem
