@@ -9,11 +9,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body id="alex">
     <%= render partial: "shared/navbar" %>
     <%= render partial: "shared/cover" %>
     <%= render partial: "shared/game-overview" %>
     <%= render partial: "shared/factions" %>
+    <%= render partial: "shared/signup" %>
     <%= yield %>
   </body>
 </html>
